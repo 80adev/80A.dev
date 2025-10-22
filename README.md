@@ -1,6 +1,6 @@
 # 80A.dev - RJ's Portfolio Website
 
-![80A.dev Portfolio](./80ADEV.PNG)
+![80A.dev Portfolio](./public/80ADEV.PNG)
 
 A modern, responsive portfolio website built with Astro, showcasing RJ's projects, bio, and posts. Features a clean design with smooth scrolling animations and dark/light theme support.
 
