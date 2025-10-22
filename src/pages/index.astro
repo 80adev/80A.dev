@@ -1,5 +1,5 @@
 ---
-import ProjectSection from "@/components/ProjectSection"
+import ProjectSlideshow from "@/components/ProjectSlideshow"
 import PostsSection from "@/components/PostsSection"
 import Timeline from "@/components/Timeline"
 import Avatar from "@/components/Avatar"
@@ -35,7 +35,7 @@ import { BIO } from "@/content/bio"
 </script>
 
 <Layout>
-  <main class="p-4 text-slate-700 dark:text-slate-400">
+  <main class="px-4 py-8 text-slate-700 dark:text-slate-400 max-w-7xl mx-auto">
     <section class="flex flex-col w-full h-screen justify-center items-center">
       <p class="max-w-56 text-center">
         Hello, I'm <strong>RJ</strong>, a fullstack developer and owner of
@@ -43,14 +43,14 @@ import { BIO } from "@/content/bio"
       </p>
       <DownIcon className="text-2xl animate-bounce mt-10" />
     </section>
-    <section class="flex flex-col w-full justify-center items-center gap-28">
-      <h2 class="font-bold">Projects</h2>
-      <ProjectSection client:load />
+    <section class="flex flex-col w-full justify-center items-center gap-16 py-16">
+      <h2 class="font-bold text-3xl">Projects</h2>
+      <ProjectSlideshow client:load />
     </section>
     <section
-      class="flex flex-col w-full justify-center items-center gap-28 mt-56"
+      class="flex flex-col w-full justify-center items-center gap-16 py-16"
     >
-      <h2 class="font-bold">About me</h2>
+      <h2 class="font-bold text-3xl">About me</h2>
       <div class="flex flex-col items-center gap-4 max-w-[500px]">
         <Avatar src="/80ADEV.PNG" alt="80ADevLogo" client:load />
         <p class="text-center">
@@ -63,19 +63,19 @@ import { BIO } from "@/content/bio"
       </div>
     </section>
     <section
-      class="flex flex-col w-full justify-center items-center gap-28 mt-56"
+      class="flex flex-col w-full justify-center items-center gap-16 py-16"
     >
-      <h2 class="font-bold">Bio</h2>
+      <h2 class="font-bold text-3xl">Bio</h2>
       <Timeline content={BIO} />
     </section>
     <section
-      class="flex flex-col w-full justify-center items-center gap-28 mt-56"
+      class="flex flex-col w-full justify-center items-center gap-16 py-16"
     >
-      <h2 class="font-bold">Posts</h2>
+      <h2 class="font-bold text-3xl">Posts</h2>
       <PostsSection client:load />
     </section>
   </main>
-  <footer>
+  <footer class="max-w-7xl mx-auto">
     <p class="text-center text-sm text-slate-700 dark:text-slate-400 p-4 mt-28">
       Made with &#x2665; by RJ&nbsp;| @80adev &middot; Forked from
       <a
