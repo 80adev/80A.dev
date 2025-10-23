@@ -74,18 +74,56 @@ import { BIO } from "@/content/bio"
       <h2 class="font-bold text-3xl">Posts</h2>
       <PostsSection client:load />
     </section>
+    <section
+      class="flex flex-col w-full justify-center items-center gap-16 py-16"
+    >
+      <h2 class="font-bold text-3xl">Get In Touch</h2>
+      <div class="flex flex-col items-center gap-6 max-w-[500px] text-center">
+        <p class="text-lg">
+          Ready to work together on your next project?
+        </p>
+        <div class="flex flex-col items-center gap-4">
+          <a 
+            href="mailto:80adev@gmail.com" 
+            class="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 dark:bg-slate-100 text-slate-100 dark:text-slate-900 rounded-lg hover:bg-slate-700 dark:hover:bg-slate-300 transition-colors duration-200 font-medium"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+              <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+            </svg>
+            80adev@gmail.com
+          </a>
+          <p class="text-sm text-slate-600 dark:text-slate-400">
+            Available for freelance projects and collaborations
+          </p>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="max-w-7xl mx-auto">
-    <p class="text-center text-sm text-slate-700 dark:text-slate-400 p-4 mt-28">
-      Made with &#x2665; by RJ&nbsp;| @80adev &middot; Forked from
-      <a
-        class="underline hover:text-slate-900 dark:hover:text-slate-200"
-        href="https://github.com/slydragonn/alogocode.site"
-        target="_blank"
-        rel="noreferrer"
-      >
-        slydragonn/alogocode.site
-      </a>
-    </p>
+    <div class="text-center text-sm text-slate-700 dark:text-slate-400 p-4 mt-28">
+      <p class="mb-2">
+        Made with &#x2665; by RJ&nbsp;| @80adev
+      </p>
+      <p class="mb-2">
+        <a 
+          href="mailto:80adev@gmail.com" 
+          class="underline hover:text-slate-900 dark:hover:text-slate-200"
+        >
+          📧 80adev@gmail.com
+        </a>
+      </p>
+      <p>
+        Forked from
+        <a
+          class="underline hover:text-slate-900 dark:hover:text-slate-200"
+          href="https://github.com/slydragonn/alogocode.site"
+          target="_blank"
+          rel="noreferrer"
+        >
+          slydragonn/alogocode.site
+        </a>
+      </p>
+    </div>
   </footer>
 </Layout>

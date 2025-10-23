@@ -1,4 +1,4 @@
-import { FaDev, FaGithub } from "react-icons/fa"
+import { FaDev, FaGithub, FaEnvelope } from "react-icons/fa"
 import { ModeToggle } from "./ModeToggle"
 
 const socials = [
@@ -11,6 +11,11 @@ const socials = [
     name: "DEV",
     url: "https://dev.to/80adev",
     icon: FaDev,
+  },
+  {
+    name: "Email",
+    url: "mailto:80adev@gmail.com",
+    icon: FaEnvelope,
   },
 ]
 
