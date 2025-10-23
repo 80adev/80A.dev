@@ -95,7 +95,7 @@ const ProjectSlideshow = () => {
   return (
     <div className="flex flex-col gap-8 w-full max-w-6xl mx-auto px-4" ref={slideshowRef}>
       {/* Navigation Controls */}
-      <div className="flex justify-between items-center">
+      <div className="relative flex justify-between items-center">
         <Button
           variant="outline"
           size="sm"
@@ -108,7 +108,7 @@ const ProjectSlideshow = () => {
           Previous
         </Button>
         
-        <span className="text-sm text-slate-600 dark:text-slate-400 font-medium">
+        <span className="absolute left-1/2 transform -translate-x-1/2 text-sm text-slate-600 dark:text-slate-400 font-medium">
           {currentIndex + 1} of {PROJECTS.length}
         </span>
         
