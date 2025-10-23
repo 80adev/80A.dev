@@ -201,7 +201,7 @@ This project is licensed under the Apache-2.0 License - see the [LICENSE](LICENS
 
 - **Website**: [80A.dev](https://80a.dev)
 - **GitHub**: [@80adev](https://github.com/80adev)
-- **Email**: [Email](80adev@gmail.com)
+- **Email**: [80adev@gmail.com]
 
 ---
 
