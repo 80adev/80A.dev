@@ -1,6 +1,5 @@
 ---
 import ProjectSlideshow from "@/components/ProjectSlideshow"
-import PostsSection from "@/components/PostsSection"
 import Timeline from "@/components/Timeline"
 import Avatar from "@/components/Avatar"
 import Layout from "@/layouts/Layout.astro"
@@ -67,12 +66,6 @@ import { BIO } from "@/content/bio"
     >
       <h2 class="font-bold text-3xl">Bio</h2>
       <Timeline content={BIO} />
-    </section>
-    <section
-      class="flex flex-col w-full justify-center items-center gap-16 py-16"
-    >
-      <h2 class="font-bold text-3xl">Posts</h2>
-      <PostsSection client:load />
     </section>
     <section
       class="flex flex-col w-full justify-center items-center gap-16 py-16"
