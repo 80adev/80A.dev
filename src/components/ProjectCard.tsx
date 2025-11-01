@@ -66,9 +66,9 @@ const ProjectCard = ({
       <img
         src={image}
         alt={title}
-        className="w-full max-w-4xl rounded-3xl border border-slate-200 dark:border-slate-700"
+        className="w-full max-w-[640px] rounded-3xl border border-slate-200 dark:border-slate-700"
       />
-      <div className="flex flex-col justify-between gap-4 w-full max-w-4xl text-center">
+      <div className="flex flex-col justify-between gap-4 w-full max-w-[640px] text-center">
         <h3 className="font-bold text-2xl">{title}</h3>
         <div className="flex flex-wrap gap-4 justify-center">
           {tags.map((tag, index) => (
